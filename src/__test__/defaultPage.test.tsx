@@ -1,5 +1,5 @@
 // App.test.tsx
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { describe, test, expect } from "vitest";
 import App from "../App";
 
