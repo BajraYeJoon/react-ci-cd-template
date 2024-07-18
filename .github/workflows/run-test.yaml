@@ -1,0 +1,22 @@
+name: This is a test workflow for running linter 
+on:
+  push:
+    branches:
+      - main
+
+jobs: 
+  run-linter: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Run linter
+        run: npm run lint
+
+      - name: Run tests
+        run: npm run test
